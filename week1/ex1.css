@@ -1,0 +1,39 @@
+#header, #main{
+	/*border: 1px solid red;*/
+	width: 800px;
+	margin-left: 20px;
+}
+#header{
+	height: 40px;
+	line-height: 30px;
+}
+#main{
+	height: 400px;	
+}
+
+span{
+	border: 1px solid red;
+	margin-left: 30px;
+	background: black;
+	color: white;
+	font-family: 'Gelasio', serif;
+}
+
+#p1{
+	color: red;
+	background: cyan;
+	font-family: 'Fruktur', system-ui;
+}
+
+#p2{
+	color: black;
+	background: orange;
+	border: 2px dashed black;
+	border-radius: 10px;
+	font-family: 'Fruktur', system-ui;
+}
+
+.paras{
+	padding: 10px;
+	margin: 20px;	
+}
