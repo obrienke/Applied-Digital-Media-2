@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Exercise 6</title>
+		<style>
+			.container > div{
+				border: 2px outset orange; 
+				background: PaleGoldenRod;
+				padding: 10px;
+				font-size: 150%;
+				box-shadow: 5px 5px 5px black;
+			}
+			.container{
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+				grid-template-rows: 50px 200px 100px 50px;
+				gap: 10px;
+				width: 50%;
+				margin: auto;
+			}
+			.spanthree{
+				grid-column: span 3;
+			}
+			.spantwo{
+				grid-column: span 2;
+			}
+			#seven{
+				grid-column: span 5;
+			}
+			#nine{
+				grid-column: span 6;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="spanthree">1</div>
+			<div class="spanthree">2</div>
+			<div class="spantwo">3</div>
+			<div>4</div>
+			<div class="spantwo">5 <br><br> Question 6 </div>
+			<div>6</div>
+			<div id="seven">7</div>
+			<div>8</div>
+			<div id="nine">9</div>
+		</div>
+	</body>
+</html>
