@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Exercise 3</title>
+		<style>
+			.container > div{
+				border: 10px solid blue; 
+				background: pink;
+			}
+			.container{
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+				grid-template-rows: 100px 100px 100px 100px;
+				gap: 10px;
+				width: 70%;
+				margin: auto;
+			}
+			#two{
+				background: lightgreen;
+				grid-column: span 2;
+			}
+			#seven{
+				background: lightblue;
+				grid-row: span 2;
+			}
+			#nine{
+				background: orange;
+			}
+			#eleven{
+				background: black;
+				color: white;
+				grid-column: span 3;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div>Box 1</div>
+			<div id="two">Box 2</div>
+			<div>Box 3</div>
+			<div>Box 4</div>
+			<div>Box 5</div>
+			<div>Box 6</div>
+			<div id="seven">Box 7</div>
+			<div>Box 8</div>
+			<div id="nine">Box 9</div>
+			<div>Box 10</div>
+			<div id="eleven">Box 11</div>
+			<div>Box 12</div>
+		</div>
+	</body>
+</html>
