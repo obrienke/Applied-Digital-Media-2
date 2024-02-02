@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Exercise 5</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Russo+One&display=swap');
+			/*.container > div{
+				border: 1px solid blue; 
+			}*/
+			.container{
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+				gap: 10px;
+				width: 60%;
+				margin: auto;
+			}
+			.firstlast{
+				grid-column: span 4;
+				background: rgba(184, 46, 15, 0.8);
+				color: white;
+				font-family: 'Russo One', sans-serif;
+				padding: 8px;
+			}
+			img{
+				width: 100%;
+			}
+			#first{
+				font-size: 200%;
+				padding: 20px;
+			}
+			p{
+				font-family: 'Raleway', sans-serif;
+			}
+			a{
+				background: white;
+				color: rgba(184, 46, 15, 0.8); 
+				text-decoration: none;
+				padding: 3px;
+				border-radius: 10px;
+			}
+			a:hover{
+				background: rgba(184, 46, 15, 0.8);
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="firstlast" id="first">
+				<center>Latest News from RTÉ</center>
+			</div>
+			<div>
+				<img src="covid.jpg">
+				<p>
+					All the latest news on Covid. There is still plenty of it to go around.
+				</p>
+			</div>
+			<div>
+				<img src="brexit.jpg">
+				<p>
+					All the latest news on Brexit. Catch up eith the latest on the protocol negotiations.
+				</p>
+			</div>
+			<div>
+				<img src="dail.jpg">
+				<p>
+					All the latest news from the Dail. Plenty of news coming from this place.
+				</p>
+			</div>
+			<div>
+				<img src="white_house.jpg">
+				<p>
+					All the latest news from the United States. Where to begin.
+				</p>
+			</div>
+			<div class="firstlast">
+				Click <a href="https://www.rte.ie/">here</a> to visit the RTÉ website for more on these and other stories
+			</div>
+		</div>
+	</body>
+</html>
