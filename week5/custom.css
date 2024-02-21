@@ -1,0 +1,15 @@
+.nav_colour{
+	background-color: red;
+}
+
+.alink{
+	color: white;
+}
+
+.current{
+	text-decoration: underline;
+}
+
+.cols{
+	border: 1px solid red;
+}
