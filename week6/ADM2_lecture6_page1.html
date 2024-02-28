@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Web Storage Demo</title>
+  </head>
+  <body>
+	<form onsubmit="return checkDetails();" action="ADM2_lecture6_page2.html">
+		<label>What is the capital city of Ireland?</label> <br><br>
+		<label>Choose one:</label> <br><br>
+		<input type="radio" name="city" value="1" class="rb"> Paris <br>
+		<input type="radio" name="city" value="2" class="rb"> Dublin <br>
+		<input type="radio" name="city" value="3" class="rb"> Cork <br>
+		<input type="radio" name="city" value="4" class="rb"> Wexford <br><br>
+		<label>Enter your name:</label><br>
+		<input id="name"><br><br>
+		<input type="submit">
+	</form>
+		
+    <script>
+		function checkDetails(){
+			//console.log(document.getElementsByClassName("rb"));
+			if(document.getElementsByClassName("rb")[1].checked){
+				sessionStorage.correct = true;
+			}else{
+				sessionStorage.correct = false;
+			}
+			sessionStorage.name = document.getElementById("name").value;
+			
+			return true;
+		}
+	</script>
+  </body>
+</html>
