@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<title>Problem 1</title>
+</head>
+<body>
+	<div id="clock"></div>
+	
+	<script>
+		let time = setInterval(timer, 1);
+		function timer(){
+			let d = new Date();
+			let seconds = d.getSeconds();
+			if(seconds < 10){
+				seconds = "0"+seconds;
+			}
+			
+			let minutes = d.getMinutes();
+			if(minutes < 10){
+				minutes = "0"+minutes;
+			}
+			
+			let hours = d.getHours();
+			if(hours < 10){
+				hours = "0"+hours;
+			}
+			let output = hours + ":" + minutes + ":" + seconds;
+			document.getElementById("clock").textContent = output ;
+		}
+	</script>
+</body>
+</html>
